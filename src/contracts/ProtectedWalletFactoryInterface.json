@@ -1,0 +1,776 @@
+{
+  "contractName": "ProtectedWalletFactoryInterface",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "ein",
+          "type": "uint256"
+        }
+      ],
+      "name": "deleteWallet",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "ein",
+          "type": "uint256"
+        }
+      ],
+      "name": "getEinToWallet",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "ein",
+          "type": "uint256"
+        }
+      ],
+      "name": "getEinHasWallet",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getSnowflakeAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ninterface ProtectedWalletFactoryInterface {\r\n    function deleteWallet(uint ein) external returns (bool);\r\n    function getEinToWallet(uint ein) external returns (address);\r\n    function getEinHasWallet(uint ein) external returns (bool);\r\n    function getSnowflakeAddress() external returns (address);\r\n}",
+  "sourcePath": "C:\\Users\\HP\\Desktop\\programming-resources\\HydroBlockchain\\vaultWallet\\smart-contracts\\snowflake\\contracts\\interfaces\\ProtectedWalletFactoryInterface.sol",
+  "ast": {
+    "absolutePath": "/C/Users/HP/Desktop/programming-resources/HydroBlockchain/vaultWallet/smart-contracts/snowflake/contracts/interfaces/ProtectedWalletFactoryInterface.sol",
+    "exportedSymbols": {
+      "ProtectedWalletFactoryInterface": [
+        10943
+      ]
+    },
+    "id": 10944,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10916,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:27"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 10943,
+        "linearizedBaseContracts": [
+          10943
+        ],
+        "name": "ProtectedWalletFactoryInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 10923,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deleteWallet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10919,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10918,
+                  "name": "ein",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10923,
+                  "src": "98:8:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10917,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "98:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "97:10:27"
+            },
+            "returnParameters": {
+              "id": 10922,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10921,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10923,
+                  "src": "126:4:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 10920,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "126:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "125:6:27"
+            },
+            "scope": 10943,
+            "src": "76:56:27",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 10930,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEinToWallet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10926,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10925,
+                  "name": "ein",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10930,
+                  "src": "162:8:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10924,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "162:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "161:10:27"
+            },
+            "returnParameters": {
+              "id": 10929,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10928,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10930,
+                  "src": "190:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10927,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "190:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "189:9:27"
+            },
+            "scope": 10943,
+            "src": "138:61:27",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 10937,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEinHasWallet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10933,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10932,
+                  "name": "ein",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10937,
+                  "src": "230:8:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10931,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "230:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "229:10:27"
+            },
+            "returnParameters": {
+              "id": 10936,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10935,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10937,
+                  "src": "258:4:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 10934,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "258:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "257:6:27"
+            },
+            "scope": 10943,
+            "src": "205:59:27",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 10942,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSnowflakeAddress",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10938,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "298:2:27"
+            },
+            "returnParameters": {
+              "id": 10941,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10940,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10942,
+                  "src": "319:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10939,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "319:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "318:9:27"
+            },
+            "scope": 10943,
+            "src": "270:58:27",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10944,
+        "src": "27:304:27"
+      }
+    ],
+    "src": "0:331:27"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/HP/Desktop/programming-resources/HydroBlockchain/vaultWallet/smart-contracts/snowflake/contracts/interfaces/ProtectedWalletFactoryInterface.sol",
+    "exportedSymbols": {
+      "ProtectedWalletFactoryInterface": [
+        10943
+      ]
+    },
+    "id": 10944,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10916,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:27"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 10943,
+        "linearizedBaseContracts": [
+          10943
+        ],
+        "name": "ProtectedWalletFactoryInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 10923,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deleteWallet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10919,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10918,
+                  "name": "ein",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10923,
+                  "src": "98:8:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10917,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "98:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "97:10:27"
+            },
+            "returnParameters": {
+              "id": 10922,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10921,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10923,
+                  "src": "126:4:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 10920,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "126:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "125:6:27"
+            },
+            "scope": 10943,
+            "src": "76:56:27",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 10930,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEinToWallet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10926,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10925,
+                  "name": "ein",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10930,
+                  "src": "162:8:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10924,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "162:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "161:10:27"
+            },
+            "returnParameters": {
+              "id": 10929,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10928,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10930,
+                  "src": "190:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10927,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "190:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "189:9:27"
+            },
+            "scope": 10943,
+            "src": "138:61:27",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 10937,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEinHasWallet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10933,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10932,
+                  "name": "ein",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10937,
+                  "src": "230:8:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10931,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "230:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "229:10:27"
+            },
+            "returnParameters": {
+              "id": 10936,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10935,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10937,
+                  "src": "258:4:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 10934,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "258:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "257:6:27"
+            },
+            "scope": 10943,
+            "src": "205:59:27",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 10942,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSnowflakeAddress",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10938,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "298:2:27"
+            },
+            "returnParameters": {
+              "id": 10941,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10940,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10942,
+                  "src": "319:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10939,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "319:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "318:9:27"
+            },
+            "scope": 10943,
+            "src": "270:58:27",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10944,
+        "src": "27:304:27"
+      }
+    ],
+    "src": "0:331:27"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.10",
+  "updatedAt": "2020-08-17T11:17:49.621Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
